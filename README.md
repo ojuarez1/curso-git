@@ -20,6 +20,8 @@ es un software de control de versiones
 
 * **_git push origin main o master_** - Con este comando estamos guardando los cambios en el directorio remoto.
 
+* **_git pull_** -Con este comando traemos del directorio remoto el proyecto actualizado.
+
 ### Posibles directorios remotos
 
 1. [**GitHub**](https://github.com)
