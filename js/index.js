@@ -1,14 +1,15 @@
-const pantalla = document.querySelector("*")
-pantalla.fillStyle = "#0f172ad9";
-console.log(pantalla)
+const cursor = document.querySelector(".cursor")
 
-pantalla.addEventListener("mouseover", cambiaColorFondo)
-function cambiaColorFondo(e) {
-  console.clear()
-  let x = e.clientX
-  let y = e.clientY
-  pantalla.fillStyle = "white"
-  
-  /* const x = e.pageX
-  const y = e.pageY */
-}
+
+document.addEventListener("mouseover", (e) => {
+  let x = e.pageX
+  let y = e.pageY
+
+  cursor.style.top = y + "px"
+  cursor.style.left = x + "px"
+  cursor.style.display = "block"
+})
+
+document.addEventListener("mouseout", () => {
+  cursor.style.display ="none"
+})
