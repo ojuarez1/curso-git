@@ -9,10 +9,6 @@ h1, h2, h3, span{
 
 body{
   background-color: rgb(15, 23, 42);
-  display: flex;
-  justify-content: center;
-  justify-items: center;
-  flex-direction: column;
 }
 
 header{
@@ -51,16 +47,24 @@ main{
   left: 50vw;
 }
 
-.container {
+.container-sobre-mi {
   width: 80%;
   margin: 0 auto;
   padding-top: 5rem;
   height: calc(100% - 5rem);
 }
 
+.container-sobre-mi p:first-child{
+  margin-bottom: 10px;
+}
+
+.container-sobre-mi p:last-child{
+  margin-top: 10px;
+}
+
 .imagen-inicio{
   height: 100vh;
-  background-image: url("assets/img/img_ojf.jpg");
+  background-image: url("../img/img_ojf.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size:auto;
@@ -74,8 +78,6 @@ main{
 .cursor{
   z-index: 999;
   position:absolute;
-  top: 50%;
-  left: 50%;
   background: #2696e8;
   width: 20px;
   height: 20px;  
