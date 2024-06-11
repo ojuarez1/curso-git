@@ -1,5 +1,7 @@
 const cursor = document.querySelector(".cursor")
 let timeout;
+const sobremi = document.querySelector(".container-sobre-mi")
+const preUno=document.querySelector(".preuno")
 
 document.addEventListener("mousemove", (e) => {
   let x = e.pageX
@@ -19,4 +21,10 @@ document.addEventListener("mousemove", (e) => {
 
 document.addEventListener("mouseout", () => {
   cursor.style.display ="none"
+})
+
+window.addEventListener("mouseover", (e) => {
+  if (e.target=== sobremi) {
+    preUno.classList.toggle("sobremi")
+  }
 })
