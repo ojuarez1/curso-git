@@ -66,6 +66,7 @@ main{
 
 .container-sobre-mi {
   width: 80%;
+  z-index: 999;
 }
 
 .container-sobre-mi p:first-child{
@@ -130,8 +131,33 @@ main{
   border-radius: 50%;
 }
 
+.habilidades{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-habilidades{
+  width: 80%;
+  height: 50%;
+  border-radius: 5px;
+  padding: 2rem;
+}
+
+.container-habilidades:hover{
+  box-shadow: 0 0 15px #2696e8;
+}
+
 .container-img > img, 
 .containerDos-img img{
-  width: 7rem;
+  width: 5rem;
 }
+
+.container-img,
+.containerDos-img{
+  padding: 2rem;
+}
+
+
 
