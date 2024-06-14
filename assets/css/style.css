@@ -133,6 +133,9 @@ main{
 
 .habilidades{
   height: 100vh;
+}
+.habilidades,
+.container-habilidades{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -143,6 +146,11 @@ main{
   height: 50%;
   border-radius: 5px;
   padding: 2rem;
+  flex-direction: column;
+}
+
+.container-habilidades div{
+  width: 80%;
 }
 
 .container-habilidades:hover{
@@ -151,13 +159,15 @@ main{
 
 .container-img > img, 
 .containerDos-img img{
-  width: 5rem;
+  width: 3rem;
 }
 
 .container-img,
 .containerDos-img{
   padding: 2rem;
+  text-align: center;
 }
 
-
-
+.mas-light{
+  background-color: #0f172ac0;
+}
