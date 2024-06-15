@@ -1,7 +1,6 @@
 *{
   margin: 0;
   color:rgb(148, 163, 184,0.85);
-  scroll-behavior: smooth;
   font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -17,7 +16,8 @@ h1{
     font-style: normal;
 }
 body{
-  background-color: rgb(15, 23, 42);
+  background-color:#0f172a;
+  box-sizing: border-box;
 }
 
 header{
@@ -64,9 +64,8 @@ main{
   left: 50%;
 }
 
-.container-sobre-mi {
+.container-sobre-mi, .habilidades{
   width: 80%;
-  z-index: 999;
 }
 
 .container-sobre-mi p:first-child{
@@ -132,40 +131,55 @@ main{
 }
 
 .habilidades{
-  height: 100vh;
+  margin: 0 auto;
+  padding: 2.5rem 0;
 }
+
 .habilidades,
 .container-habilidades{
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.container-habilidades{
-  width: 80%;
-  height: 50%;
-  border-radius: 5px;
-  padding: 2rem;
   flex-direction: column;
 }
 
-.container-habilidades div{
-  width: 80%;
+.container-habilidades,
+.menu-icon{
+  width: 100%;
 }
 
-.container-habilidades:hover{
+/* .container-habilidades:hover{
   box-shadow: 0 0 15px #2696e8;
+} */
+
+.menu-icon{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2%;
+  padding: 0;
 }
 
-.container-img > img, 
-.containerDos-img img{
+.menu-icon img{
   width: 3rem;
+  border-radius: 20%;
 }
 
-.container-img,
-.containerDos-img{
-  padding: 2rem;
+.height-icon{
+  height: calc(76vh + 2rem);
+}
+
+.menu-icon li{
+  width: 32%;
+  height: 30vh;
+  box-shadow: 5px 5px 10px rgba(38, 150, 232, 0.3);
+  list-style: none;
   text-align: center;
+  padding-top: 1rem;
+  border-radius: 1rem;
+}
+
+.container-habilidades h3{
+  padding-bottom: 2.5rem;
 }
 
 .mas-light{
